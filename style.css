@@ -17,7 +17,7 @@
 .header{
 	width: 100%;
 	height: 920px;
-	background: url('../site2/images/backDog.jpg') center no-repeat;
+	background: url('../portfolio667.github.io/images/backDog.jpg') center no-repeat;
 	background-size: cover;
 }
 .header h3, .header a{
@@ -360,7 +360,7 @@
 .footer{
 	width: 100%;
 	height: 360px;
-	background: url(../site2/images/footer-back.jpg) center no-repeat;
+	background: url(../portfolio667.github.io/images/footer-back.jpg) center no-repeat;
 	background-size: cover;
 }
 .footer-content{
