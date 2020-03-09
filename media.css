@@ -1,5 +1,8 @@
-@media only screen and (max-device-width: 700px){
+@media only screen and (max-device-width: 480px){
     .wrapper{
         width: 700px;
+    }
+    .pets-slider{
+        width: 500px;
     }
 }
