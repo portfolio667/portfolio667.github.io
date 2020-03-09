@@ -3,6 +3,9 @@
         width: 700px;
     }
     .pets-slider{
-        width: 500px;
+        width: 300px;
+    }
+    .about-content{
+        grid-template-columns: .5fr 1.5fr;
     }
 }
