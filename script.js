@@ -1,13 +1,33 @@
-let width_slider = document.querySelector('.slider-content')
-let pet = document.querySelectorAll('.slider-pets')
-let l_arr = document.querySelector('.l_arrow') 
-let r_arr = document.querySelector('.r_arrow') 
-let right = 0;
+let sliderItemWidth = Math.round(((window.innerWidth / 3) / 10) - 0.5) * 10;
+let sliderWidth
+let sliderItem = document.querySelectorAll('.slider-item')
+let sliderContent =  document.querySelector('.slider-content')
 
-// function parallax(e){
-// 	document.querySelector('.header-content').style.transform = `translateX(${event.clientX/50}px) translateY(${event.clientY/50}px)`
-// 	document.querySelector('.header-logo').style.transform = 'none'
-// }
+let switcher = document.querySelectorAll('.fourthsec-switch div')
+
+let rightArr = document.querySelector('.rightArr')
+let leftArr = document.querySelector('.leftArr')
+let right = 0
+
+console.log(document.querySelectorAll('.header-navigation-list a')[0])
+
+
+function clearInp(){
+    let areasArr = []
+    let all = []
+    let inputs = document.querySelectorAll('input') 
+    let areas = document.querySelectorAll('textarea')
+    for (let i = 0; i < inputs.length; i++) {
+        all[i] = inputs[i]
+        for (let j = 0; j < areas.length; j++) {
+            areasArr[j] = areas[j]
+        }
+    }
+    all = all.concat(areasArr)
+    for (let i = 0; i < all.length; i++) {
+        all[i].value = '' 
+    }
+}
 
 function scrollTo(e,toWhat){
 	e.preventDefault()
@@ -16,45 +36,74 @@ function scrollTo(e,toWhat){
 	target.scrollIntoView({block: "center", behavior: "smooth"})
 }
 
-const sliderLeft = () => {
-	if (right === 0) {
-		right = 660
-	}
-	else right = right - 330
-	width_slider.style.right = right + 'px';
+document.querySelectorAll('.header-navigation-list a')[0].addEventListener('click', function(){
+    scrollTo(event, '.secSec')
+})
+document.querySelectorAll('.header-navigation-list a')[1].addEventListener('click', function(){
+    scrollTo(event, '.thirdSec')
+})
+document.querySelectorAll('.header-navigation-list a')[2].addEventListener('click', function(){
+    scrollTo(event, '.fourthSec')
+})
+document.querySelectorAll('.header-navigation-list a')[3].addEventListener('click', function(){
+    scrollTo(event, '.fifthSec')
+})
+
+function switching(num){
+    switch (num) {
+        case 0:
+            switcher[1].className = 'non-active'
+            switcher[0].className = 'active'
+            switcher[3].className = 'non-active'
+            break;
+        case sliderItemWidth:
+            switcher[1].className = 'active'
+            switcher[0].className = 'non-active'
+            switcher[2].className = 'non-active'
+            break;              
+        default:
+            break;
+    }
 }
 
-const sliderRight = () => {
-	if (right === 660) {
-		right = 0
-	}
-	else right = right + 330
-	width_slider.style.right = right + 'px';
+function setWidth(){
+    for (let i = 0; i < sliderItem.length; i++) {
+        sliderItem[i].style.width = sliderItemWidth + 'px'
+    }
+    sliderWidth = sliderItemWidth * sliderItem.length
+    sliderContent.style.width = sliderWidth + 'px'
 }
-l_arr.addEventListener('click', sliderLeft)
-r_arr.addEventListener('click', sliderRight)
-for (var i = 0; i < pet.length; i++) {
-	pet[i].addEventListener('mousemove', function(){
-	this.querySelector('a').style.background = '#f1cdb3'
-})
-	pet[i].addEventListener('mouseout', function(){
-	this.querySelector('a').style.background = '#fafafa'
-	})
+
+function rightSlide(e){
+    e.preventDefault()
+    if (right ==  (sliderItem.length - 3) * sliderItemWidth){
+        right = 0
+    }
+    else right += sliderItemWidth
+    sliderContent.style.right = right + 'px'
+    console.log(right)
+    switching(right)
 }
-document.querySelector('#butAbout').addEventListener('click', function()
-	{
-		scrollTo(event,'.about')
-	})
-document.querySelector('#butOur').addEventListener('click', function()
-	{
-		scrollTo(event,'.pets')
-	})
-document.querySelector('#butHelp').addEventListener('click', function()
-	{
-		scrollTo(event,'.help')
-	})
-document.querySelector('#butCont').addEventListener('click', function()
-	{
-		scrollTo(event,'.footer')
-	})
-// document.addEventListener('mousemove', parallax)
+function leftSlide(e){
+    e.preventDefault()
+    if (right ==  0){
+        right = (sliderItem.length - 3) * sliderItemWidth
+    }
+    else right -= sliderItemWidth
+    sliderContent.style.right = right + 'px'
+    console.log(right)
+    switching(right)
+}
+
+
+function slide(){
+    rightArr.addEventListener('click', rightSlide)
+    leftArr.addEventListener('click', leftSlide)
+    console.log(right)
+
+}
+
+
+clearInp()
+slide()
+setWidth()

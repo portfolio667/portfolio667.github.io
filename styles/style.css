@@ -1,0 +1,428 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+}
+p, a, h2, h3, h4, h5, h6,h1{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+.container{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 1100px;
+    background: url('../img/header-back.jpg') center no-repeat;
+    background-size: cover;
+}
+#homeLogo{
+    position: fixed;
+    margin-top: 27px;
+    font-size: 18px;
+
+}
+.header-content{
+    width: 100%;
+    height: 810px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    grid-template-areas: 
+    'h-nav h-ic'
+    'h-txt h-txt';
+}
+.header-navigation{
+    grid-area: h-nav;
+    margin-left: 100px;
+    margin-top: 30px;
+}   
+.header-navigation a{
+    margin-left: 30px;
+    opacity: .8;
+    transition: .5s;
+}
+.header-navigation a:hover{
+    opacity: 1;
+}
+.header-icons{
+    grid-area: h-ic;
+    margin-top: 30px;
+}
+.header-icons img{
+    margin-left: 30px;
+    margin-top: -7px;
+}
+.header-maintext{
+    grid-area: h-txt;
+    display: grid;
+    justify-content: center;
+}
+.header-Title h1{
+    font-size: 96px;
+    font-weight: 500;
+    text-align: center;
+}
+.header-avtxt{
+    margin-top: -60px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+.header-avtxt img{
+    width: 550px;
+    height: 400px;
+}
+.header-info{
+    margin-left: -80px;
+}
+.header-info h4{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.header-info p{
+    font-size: 20px;
+    opacity: .7;
+    line-height: 30px;
+}
+
+/*Обо мне*/
+.secSec{
+    width: 100%;
+    height: 400px;
+    background: #fff;
+}
+.secSec h1, .secSec p, .secSec a{
+    color: #0E2548;
+}
+.secSec-content{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.secSec-title{
+    text-align: center;
+    width: 160px;
+    border-left: 5px solid #0E2548;
+    justify-self: center;
+    text-transform: uppercase;
+}
+.secSec-mainText{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    's-txt1 . s-txt2 . s-txt3'
+    's-txt4 s-txt4 . s-txt5 s-txt5';
+    user-select: none;      
+}
+.secSec-mainText p{
+    opacity: .8;
+    transition: .5s;
+}
+.secSec-mainText p:hover{
+    opacity: 1;
+}
+.secSec-mainText div{
+    text-align: center;
+}
+#text1{
+    grid-area: s-txt1;
+}
+#text2{
+    grid-area: s-txt2;
+    margin-left: -20px;
+}
+#text3{
+    grid-area: s-txt3;
+}
+#text4{
+    grid-area: s-txt4;
+    margin-left: 80px;
+}
+#text5{
+    grid-area: s-txt5;
+    margin-right: 80px;
+}
+
+
+/*Почему я*/
+
+.thirdSec{
+    width: 100%;
+    height: 350px;
+    background: url('../img/whyme-back.jpg') center no-repeat;
+    background-size: cover;
+}
+.thirdSec-content{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+.thirdSec-title{
+    justify-self: center;
+    padding-left: 15px;
+    align-self: center;
+    border-left: 5px solid #ffff;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.thirdSec-mainText{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+.thirdSec-mainTextWrap{
+    text-align: center;
+}
+.thirdSec-mainTextWrap p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.thirdSec-mainTextWrap div{
+    margin-left: 65px;
+}
+.circle{
+    background: rgba(255,255,255, .6);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Слайдер*/
+
+.fourthSec{
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.fourthSec h1, .fourthSec p, .fourthSec a{
+    color: #0E2548;
+}
+.fourthSec-title{
+    justify-self: center;
+    text-transform: uppercase;
+    border-left: 5px solid #0E2548;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.slider{
+    width: 100%;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.slider-content{
+    position: relative;
+    right: 0;
+    transition: .5s ease-in-out;
+}
+.arr{
+    position: absolute;
+    top: 30%;
+    z-index: 3;
+}
+.rightArr{
+    right: 0;
+}
+.leftArr{
+    right: 1;
+}
+.slider-item{
+    height: 270px;
+    border: 2px solid #0E2548;
+    float: left;
+    background: red;
+    position: relative;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.slider-item a{
+    color: #fff;
+    font-size: 20px;
+}
+.lookProj{
+    text-transform: uppercase;
+    z-index: 5;
+    opacity: 0;
+    width: 300px;
+    transition: .5s;
+    justify-self: center;
+}
+.slider-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    transition: .5s;
+}
+.slider-item::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transition: .5s;
+}
+.slider-item:hover:after{
+    width: 100%;
+}
+.slider-item:hover:before{
+    width: 100.5%;
+}
+.slider-item:hover .lookProj{
+    opacity: 1;
+}
+
+
+.fourthsec-switch{
+    position: absolute;
+    top: 90%;
+    left: 46%;
+}
+.active{
+    background: #0E2548;
+}
+.non-active{
+    background: #EAEAEA;
+}
+.fourthsec-switch div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    float: left;
+    margin-left: 10px;
+    transition: .5s ease-in-out;
+}
+#item-1{
+    background: url('../img/fSite-img.png') center no-repeat;
+    background-size: cover;
+}
+#item-2{
+    background: url('../img/sSite-img.png') left no-repeat;
+    background-size: cover;
+}
+#item-3{
+    background: url('../img/tSite-img.png') left no-repeat;
+    background-size: cover;
+}
+#item-4{
+    background: url('../img/fourthSite-img.jpg') left no-repeat;
+    background-size: cover;
+}
+
+
+
+/* Связаться со мной */
+
+.fifthSec{
+    width: 100%;
+    height: 636px;
+    background: url('../img/fifthSec-back.jpg') center no-repeat;
+    background-size: cover;
+}
+.fifthSec p, .fifthSec h1{
+    color: #0E2548;
+    justify-self: center;
+}
+.fifthSec-content{
+    width: 100%;
+    height: 636px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: 440px;
+    width: 1000px;
+    border-radius: 20px;
+    background: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.inputs-wrapper{
+    width: 820px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'f-name f-mail'
+    'f-message f-message';
+    justify-content: center;
+    grid-gap: 20px;
+}
+.inputs-wrapper input, .inputs-wrapper textarea{
+    font-size: 15px;
+    opacity: .3;
+    color: #000;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.smallInp{
+    width: 300px;
+    height: 40px;
+}
+#name{
+    grid-area: f-name;
+}
+#mail{
+    grid-area: f-mail;
+}
+#message{
+    grid-area: f-message;
+    height: 101px;
+    padding-top: 10px;
+}
+.button{
+    color: #fff;
+    justify-self: center;
+    width: 150px;
+    background: #0E2548;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.footer{
+    justify-self: center;
+}
+.footer p{
+    color: #fff;
+}
