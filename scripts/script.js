@@ -44,9 +44,6 @@ document.querySelectorAll('.header-navigation-list a')[1].addEventListener('clic
 document.querySelectorAll('.header-navigation-list a')[2].addEventListener('click', function(){
     scrollTo(event, '.fourthSec')
 })
-document.querySelectorAll('.header-navigation-list a')[3].addEventListener('click', function(){
-    scrollTo(event, '.fifthSec')
-})
 
 function switching(num){
     switch (num) {
