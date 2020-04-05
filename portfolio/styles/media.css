@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1110px){
+    .header-content{
+        grid-template-columns: 3fr 1fr;
+    }
+    .header-icons img{
+        margin-left: 30px;
+    }
+    .header-icons{
+        text-align: right;
+    }
+    .header-navigation{
+        margin-left: 60px;
+    }
+    .container{
+        width: 900px;
+    }
+    .secSec-mainText{
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        's-txt1 s-txt2  s-txt3'
+        's-txt4 s-txt2 s-txt5';
+        user-select: none;      
+    }
+    .thirdSec-mainTextWrap div{
+        margin-left: 45px;
+    }
+    .header-avtxt{
+        margin-left: -20px;
+    }
+}
