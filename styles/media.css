@@ -30,33 +30,67 @@
     }
 }
 @media only screen and (max-width: 930px){
-    .header-navigation{
-        margin-left: 170px;
-    }
 }
 @media only screen and (max-width: 767px) {
-    .container{
-        width: 740px;
+    .header-avtxt{
+        margin-top: 20px;
+    }
+    .header{
+        height: 700px;
+    }
+    .header-content{
+        height: 700px;
+    }
+    .header-navigation a{
+        font-size: 15px;
+    }
+    .header-Title h1{
+        font-size: 66px;
     }
     .header-icons{
         margin-right: 30px;
         float: none;
         display: grid;
         grid-template-columns: 1fr;
+        grid-row-gap: -45px;
+        height: 150px;
+        margin-right: 50px;
     }
-    .header-navigation a{
+    .header-avtxt img{
+        width: 450px;
+        height: 300px;
+    }
+    .header-info h4{
+        font-size: 30px;
+    }
+    .header-info p{
         font-size: 15px;
+        opacity: .7;
+        line-height: 30px;
     }
+    .header-icons img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .container{
+        width: 700px;
+    }
+
     .secSec-mainText{
         grid-template-areas: 
         's-txt1 . s-txt2 . s-txt3'
         's-txt4 s-txt2 s-txt2 s-txt2 s-txt5';
+        grid-gap: 30px;
+        margin-top: -100px;
+        width: 600px;
     }
     .secSec-mainText p{
-        font-size: 13px;
+        font-size: 12px;
     }
     #text2{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     #text4{
         margin-left: 0px;
@@ -71,4 +105,31 @@
         color: #fff;
         font-size: 15px;
     }
+
+
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+    .thirdSec-mainTextWrap p{
+        font-size: 13px;
+    }
+
+
+    .slider-item{
+        height: 200px;
+    }
+    .arr{
+        position: absolute;
+        top: 25%;
+    }
+    .lookProj{
+        width: 100px;
+    }
+    .slider-item a{
+        font-size: 13px;
+    }
+    .fourthsec-switch{
+        position: absolute;
+        top: 86%;
 }
