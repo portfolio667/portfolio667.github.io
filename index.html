@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="styles/style.css">
@@ -13,18 +13,21 @@
 <body>
 <header class="header">
     <div class="container"> 
-          <div class="header-content rellax " data-rellax-speed='3'> 
+          <div class="header-content rellax " data-rellax-speed='3'>  
             <nav class="header-navigation">
-                <li class="header-navigation-list">
-                    <a href="#">Мои навыки</a>
-                    <a href="#">Почему я?</a>
-                    <a href="#">Мои работы</a>
-                </li>
+                <div class="burger__menu">
+                    <span></span>
+                </div> 
+                <ul class="nav nav-nonactive">
+                    <li><a href="#">Мои навыки</a></li>
+                    <li><a href="#">Почему я?</a></li>
+                    <li><a href="#">Мои работы</a></li>
+                </ul>
             </nav>
             <div class="header-icons">
-                <a href="https://t.me/tvojsensei"><img src="img/icons/teleg.png" alt=""></a>
-                <a href="https://www.instagram.com/tvojsensei/"><img src="img/icons/inst.png" alt=""></a>
-                <a href="https://vk.com/tvojsensei"><img src="img/icons/vk.png" alt=""></a>
+                <a href="https://t.me/tvojsensei"><img src="img/icons/teleg.png"></a>
+                <a href="https://www.instagram.com/tvojsensei/"><img src="img/icons/inst.png"></a>
+                <a href="https://vk.com/tvojsensei"><img src="img/icons/vk.png"></a>
             </div>
             <div class="header-maintext">
                 <div class="header-Title">
@@ -32,7 +35,7 @@
                 </div>
                 <div class="header-avtxt">
                     <div>
-                        <img src="img/av2.png" alt="">
+                        <img src="img/av2.png">
                     </div>
                     <div class="header-info">
                         <h4>Виктор</h4>
@@ -49,24 +52,25 @@
         <div class="secSec-content">
             <div class="secSec-title">
                 <h1>Мои навыки</h1>
+                <a href="#"> <img src="img/icons/down-arrow.png" id="down-arrow" class="open"> </a>
             </div>
-            <div class="secSec-mainText">
-                <div id="text1">
-                    <p>Умею регистрировать домен и привязывать его к сайту</p>
+                <div class="secSec-mainText">
+                    <div id="text1">
+                        <p>Умею регистрировать домен и привязывать его к сайту</p>
+                    </div>
+                    <div id="text2">
+                        <p>Знаю JS на высоком уровне. </br>В крупных проектах использую препроцессор SASS</p>
+                    </div>
+                    <div id=text3>
+                        <p>Умею заливать файлы на хостинг</p>
+                    </div>
+                    <div id="text4">
+                        <p>При верстке использую сетку Grid</p>
+                    </div>
+                    <div id="text5">
+                        <p>Разбираюсь в таких CMS, как WordPress & Битрикс</p>
+                    </div>
                 </div>
-                <div id="text2">
-                    <p>Знаю JS на высоком уровне. </br>В крупных проектах использую препроцессор SASS</p>
-                </div>
-                <div id=text3>
-                    <p>Умею заливать файлы на хостинг</p>
-                </div>
-                <div id="text4">
-                    <p>При верстке использую сетку Grid</p>
-                </div>
-                <div id="text5">
-                    <p>Разбираюсь в таких CMS, как WordPress & Битрикс</p>
-                </div>
-            </div>
           </div>
       </div>
 </section>
@@ -81,19 +85,19 @@
             </div>
             <div class="thirdSec-mainText">
                 <div class="thirdSec-mainTextWrap">
-                    <div class="circle"><img src="img/icons/speed.png" width="80px" height="80px" alt=""></div>
+                    <div class="circle"><img src="img/icons/speed.png" width="80px" height="80px"></div>
                     <p>Работаю быстро</p>
                 </div>
                 <div class="thirdSec-mainTextWrap">
-                    <div class="circle"><img src="img/icons/approach.png" width="80px" height="80px" alt=""></div>
+                    <div class="circle"><img src="img/icons/approach.png" width="80px" height="80px"></div>
                     <p>Индивидуальный подход </br>к каждому</p>
                 </div>
                 <div class="thirdSec-mainTextWrap">
-                    <div class="circle"><img src="img/icons/accuracy.png" width="80px" height="80px" alt=""></div>
+                    <div class="circle"><img src="img/icons/accuracy.png" width="80px" height="80px"></div>
                     <p>Выполняю строго по ТЗ</p>
                 </div>
                 <div class="thirdSec-mainTextWrap">
-                    <div class="circle"><img src="img/icons/checked.png" width="80px" height="80px" alt=""></div>
+                    <div class="circle"><img src="img/icons/checked.png" width="80px" height="80px"></div>
                     <p>Отличный результат</p>
                 </div>
             </div>    
@@ -106,8 +110,7 @@
             <h1>Мои работы</h1>
         </div>
         <div class="slider">
-            <div class="leftArr arr"><a href="#"><img src="img/icons/leftArr2.png" alt=""></a></div>
-            <div class="slider-content">
+            <div class="leftArr arr"><a href="#"><img src="img/icons/leftArr2.png"></a></div>
                 <div class="slider-content">
                     <div class="slider-item" id="item-1"><a href="https://portfolio667.github.io/creative-company" target="_blank" class="lookProj" id="creative-company">Посмотреть проект</a></div>
     
@@ -117,8 +120,7 @@
     
                     <div class="slider-item" id="item-4"><a href="https://portfolio667.github.io/stroy-dom" target="_blank" class="lookProj" id="stroy-dom">Посмотреть проект</a></div>
                 </div>
-            </div>
-            <div class="rightArr arr"><a href="#"><img src="img/icons/rightArr2.png" alt=""></a></div>
+            <div class="rightArr arr"><a href="#"><img src="img/icons/rightArr2.png"></a></div>
         </div>
         <div class="fourthsec-switch">
             <div class="active"></div>
