@@ -145,7 +145,7 @@
     .burger__menu{
         width: 30px;
         display: fixed;
-        margin: 30px 0 0 80px;
+        margin: 30px 0 0 60px;
         position: absolute;
         height: 20px;
         z-index: 5;
@@ -261,6 +261,7 @@
     .header-avtxt img{
         width: 300px;
         height: 200px;
+        margin-left: -13px;
     }
     .header-maintext{
         width: 100%;
@@ -269,6 +270,7 @@
         margin-top: -30px;
         grid-template-columns: 1fr;
         text-align: center;
+        margin-left: 15px;
     }
     .header-Title h1{
         font-size: 46px;
@@ -290,6 +292,8 @@
         height: 130px;
         transition: 1s;
     }
+}
+@media only screen and (max-width: 420px){
     .secSec-mainText{
         margin-top: 0px;
         grid-template-columns: 1fr;
@@ -302,4 +306,21 @@
         's-txt3';
         transition: 1s; 
     }
+
+    .thirdSec{
+        height: 1000px;
+    }
+    .thirdSec-mainText{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin-top: 50px;
+    }
+    .thirdSec-mainTextWrap div{
+        margin-left: 65px;
+    }
+    .slider-item{
+        width: 50%;
+        height: 150px;
+    }
+
 }
