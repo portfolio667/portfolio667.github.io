@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px){
+    .wrapper{
+        max-width: 750px;
+    }
+
+    .header-text{
+        grid-area: h-txt;
+        width: 40%;
+        text-align: center;
+        justify-self: center;
+    }
+
+
+    .about{
+        height: 1000px;
+    }
+    .about-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                'a-img'
+                'a-txt';
+    }
+    .about-img img{
+        position: static;
+    }
+    .about-text{
+        grid-area: a-txt;
+        text-align: center;
+    }
+
+    .pets{
+        height: 1000px;
+    }
+    .pets-content{
+        height: 100%;
+    }
+    .pets_arrows{
+        margin-top: 0px;
+        height: 430px;
+        width: 100%;
+    }
+    .arrow{
+        display: none;
+    }
+    .slider-pets{
+        float: none;
+        width: 200px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .slider-pets img{
+        height: 200px;
+        width: 200px;
+    }
+    .slider-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .pets-slider{
+        overflow-y: scroll;
+        position: relative;
+        height: 550px;
+        width: 100%;
+    }
+
+
+
+    .help{
+        height: 610px;
+    }
+    .help-first-area{
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .help-sec-area{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .donation{
+        height: 700px;
+    }
+    .donation-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'd-img'
+        'd-txt';
+    }
+
+    .footer{
+        height: 540px;
+    }
+    .footer-items{
+        justify-self: center;
+    }
+    .footer-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+                'f-ques f-locate'
+                'f-image f-image';
+        padding-top: 39px;
+    }	
+    .footer h1{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 548px){
+    .wrapper{
+        max-width: 500px;
+    }
+    .pets_arrows{
+        margin-top: 170px;
+        height: 200px;
+    }
+    .slider-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pets-lm{
+        margin-top: 100px;
+        justify-self: center;
+    }
+}

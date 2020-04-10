@@ -9,7 +9,7 @@
 
 }
 .wrapper{
-	width: 1205px;
+	max-width: 1205px;
 	margin: 0 auto;
 	height: 100%;
 
@@ -28,10 +28,10 @@
 	width: 100%;
 	height: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-areas: 
 			'h-logo h-nav'
-			'h-txt .';
+			'h-txt h-txt';
 	
 }
 /*h-logo*/
@@ -54,6 +54,9 @@
 	grid-area: h-nav;
 	padding-top: 20px;
 }
+.header-nav li{
+	float: left;
+}
 .header-nav a{
 	margin-left: 40px;
 	color: #b4b4b3;
@@ -62,6 +65,7 @@
 /*h-text*/
 .header-text{
 	grid-area: h-txt;
+	width: 40%;
 }
 .header-text h1{
 	font-size: 70px;
@@ -175,6 +179,7 @@
 	height: 430px;
 	width: 950px;
 	overflow: hidden; 
+	grid-area: s-pet;
 }
 .l_arrow, .r_arrow{
 	border: solid #f1cdb3;
@@ -212,7 +217,6 @@
 	position: relative;
 	float: left;
 	margin-left: 50px;
-	grid-area: s-pet;
 	height: 420px;
 	width: 265px;
 	display: grid;
@@ -245,6 +249,9 @@
 	font-weight: normal;
 
 }
+
+
+
 .help{
 	height: 590px;
 	width: 100%;
@@ -278,17 +285,20 @@
 }
 .help-first-area{
 	grid-area: h-first;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	justify-self: center;
 	margin-right: 115px;
 }
 .help-first-area div, .help-sec-area div{
 	text-align: center;
-	float: left;
 	margin-left: 115px;
 	cursor: pointer;
 }
 .help-sec-area{
 	grid-area: h-sec;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	justify-self: center; 
 	margin-right: 115px;
 }
@@ -309,8 +319,10 @@
 }
 .donation-img{
 	grid-area: d-img;
+	justify-self: center;
 }
 .donation-text{
+	justify-self: center;
 	grid-area: d-txt;
 	margin-left: 100px; 
 }
