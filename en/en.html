@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Web-developer portfolio - Victor. My skills, why me, my projects. Will do your task ">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="../styles/style.css">
+   <link rel="stylesheet" href="../styles/animate.css">
+   <link rel="stylesheet" href="../styles/media.css">
+   <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+   <title>Victor Portfolio</title>
+</head>
+<body>
+<header class="header">
+    <div class="container"> 
+          <div class="header-content rellax " data-rellax-speed='3'>
+            <div class="switchLang">
+                <a href="#">RU</a>
+                <a href="#" class="langActive">ENG</a>
+            </div>  
+            <nav class="header-navigation">
+                <div class="burger__menu">
+                    <span></span>
+                </div> 
+                <ul class="nav nav-nonactive">
+                    <li><a href="#">My skills</a></li>
+                    <li><a href="#">Why me</a></li>
+                    <li><a href="#">My projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="https://t.me/tvojsensei"><img src="../img/icons/teleg.png"></a>
+                <a href="https://www.instagram.com/tvojsensei/"><img src="../img/icons/inst.png"></a>
+                <a href="https://vk.com/tvojsensei"><img src="../img/icons/vk.png"></a>
+            </div>
+            <div class="header-maintext">
+                <div class="header-Title">
+                    <h1 class="">Portfolio</h1>
+                </div>
+                <div class="header-avtxt">
+                    <div>
+                        <img src="../img/av2.png">
+                    </div>
+                    <div class="header-info">
+                        <h4>Victor</h4>
+                        <p>A beginning web-developer</br>HTML/CSS coder</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</header> 
+
+<section class="secSec">
+    <div class="container">
+        <div class="secSec-content">
+            <div class="secSec-title">
+                <h1>My skills</h1>
+                <a href="#"> <img src="../img/icons/down-arrow.png" id="down-arrow" class="open"> </a>
+            </div>
+                <div class="secSec-mainText">
+                    <div id="text1">
+                        <p>Can register domain and link with site</p>
+                    </div>
+                    <div id="text2">
+                        <p>Knowledge of JS on hight level</br>In large projects using SASS</p>
+                    </div>
+                    <div id=text3>
+                        <p>Can upload files to hosting</p>
+                    </div>
+                    <div id="text4">
+                        <p>Adaptive layout </br> Using CSS Grid</p>
+                    </div>
+                    <div id="text5">
+                        <p>Versed in CMS like WordPress and Bitrix</p>
+                    </div>
+                </div>
+          </div>
+      </div>
+</section>
+
+<section class="thirdSec">
+      <div class="container">
+        <div class="thirdSec-content wow fadeInUp" >
+            <div class="thirdSec-title">
+                <h1>
+                    Why me?
+                </h1>
+            </div>
+            <div class="thirdSec-mainText">
+                <div class="thirdSec-mainTextWrap">
+                    <div class="circle"><img src="../img/icons/speed.png" width="80px" height="80px"></div>
+                    <p>I work fast</p>
+                </div>
+                <div class="thirdSec-mainTextWrap">
+                    <div class="circle"><img src="../img/icons/approach.png" width="80px" height="80px"></div>
+                    <p>Individual approach</br>to everyone</p>
+                </div>
+                <div class="thirdSec-mainTextWrap">
+                    <div class="circle"><img src="../img/icons/accuracy.png" width="80px" height="80px"></div>
+                    <p>Doing only by Technical Task</p>
+                </div>
+                <div class="thirdSec-mainTextWrap">
+                    <div class="circle"><img src="../img/icons/checked.png" width="80px" height="80px"></div>
+                    <p>Amazing result</p>
+                </div>
+            </div>    
+        </div>
+      </div>
+</section>
+
+<section class="fourthSec">
+        <div class="fourthSec-title">
+            <h1>My projects</h1>
+        </div>
+        <div class="slider">
+            <div class="leftArr arr"><a href="#"><img src="../img/icons/leftArr2.png"></a></div>
+                <div class="slider-content">
+                    <div class="slider-item" id="item-1"><a href="https://portfolio667.github.io/creative-company" target="_blank" class="lookProj" id="creative-company">See more</a></div>
+    
+                    <div class="slider-item" id="item-2"><a href="https://portfolio667.github.io/shelter" target="_blank" class="lookProj" id="shelter">See more</a></div>
+    
+                    <div class="slider-item" id="item-3"><a href="https://portfolio667.github.io/cozy-house" target="_blank" class="lookProj" id="cozy-house">See more</a></div>
+    
+                    <div class="slider-item" id="item-4"><a href="https://portfolio667.github.io/stroy-dom" target="_blank" class="lookProj" id="stroy-dom">See more</a></div>
+                </div>
+            <div class="rightArr arr"><a href="#"><img src="../img/icons/rightArr2.png"></a></div>
+        </div>
+        <div class="fourthsec-switch">
+            <div class="active"></div>
+            <div class="non-active"></div>
+        </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>© 2020 / E-mail: vity.malygin@mail.ru</p>
+        </div>         
+    </div>
+</footer>
+
+
+<script src="../scripts/script.js"></script>
+<script src="../scripts/rellax.min.js"></script>
+<script src="../scripts/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>  
+
+<script>
+    var rellax = new Rellax('.rellax')
+</script>
+</body>
+</html>
