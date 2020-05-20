@@ -25,7 +25,7 @@ h1{
 
 
 .container{
-    width: 1120px;
+    max-width: 1120px;
     height: 100%;
     margin: 0 auto;
 }
@@ -45,7 +45,7 @@ h1{
     height: 780px;
     position: relative;
     display: grid;
-    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-columns: .5fr 1fr .5fr;
     grid-template-areas: 
         'hLogo hNav hNum'
         'hTxt hTxt .';
@@ -115,7 +115,7 @@ h1{
 }
 .secSec-content{
     width: 100%;
-    height: 700px;
+    height: 100%;
     position: relative;
     display: grid;
     justify-content: center;
@@ -145,13 +145,34 @@ h1{
     height: 385px;
     background-size: cover;
     box-shadow:  0 0 30px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
-.secSec-firstHouse{
-    background: url('../stroy-dom/img/house1.png') center no-repeat;
+.house h1{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 40px 0 0 40px;
+}
+.house p{
+    position: absolute;
+    right: 0;
+    color: #414141;
+    border: 1px solid #414141;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.secSec-firstHouse img{
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+    width: 100%;
 
 }
-.secSec-secondHouse{
-    background: url('../stroy-dom/img/house2.png') center no-repeat;
+.secSec-secondHouse img{
+    position: absolute;
+    bottom: 0;
+    height: 55%;
+    width: 100%;
 }
 
 
@@ -171,11 +192,14 @@ h1{
     justify-content: center;
 }
 .thirdSec-mainText{
-    margin-top: 120px;
-    margin-left: 280px;
+    justify-self: center;
+    position: relative;
+    align-self: center;
+    margin-top: 100px;
 }
 .thirdSec-mainText h1{
-    font-size: 30px;
+    opacity: .8;
+    font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -195,6 +219,7 @@ h1{
     width: 300px; 
 }
 .house-card{
+    position: relative;
     float: left;
     margin-left: 60px;
     width: 300px;
@@ -234,42 +259,45 @@ h1{
 }
 .fourthSec-content{
     width: 100%;
-    height: 510px;
+    height: 100%;
     position: relative;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 .fourthSec-mainText{
+    opacity: .8;
     position: relative;
-    left: 30%;
-    top: 60%;
-    width: 600px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
 }
 .fourthSec-mainText h1{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .fourthSec-images{
+    width: 80%;
+    justify-self: center;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    left: 12%;
-    width: 1000px;
+
 }
 .fourthSec-images div{
-    margin-top: 40px;
-    width: 50%;
-    height: 33.333%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
 }
-.fourthSec-images div p{
-    margin-left: -30px;
+.fourthSec-images img{
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+} 
+.fourthSec-images p{
+    margin-top: 20px;
 }
+
+
 
 
 

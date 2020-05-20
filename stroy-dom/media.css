@@ -1,0 +1,158 @@
+@media screen and (max-width: 840px){
+    .line{
+        width: 15%;
+    }
+    
+    
+    .house{
+        height: 300px;
+        width: 300px;
+    }
+    .secSec-cards{
+        grid-gap: 50px;
+    }
+
+
+
+    .thirdSec-mainText h1{
+        font-size: 25px;
+    }
+
+    .fourthSec-mainText{
+        left: 0;
+        top: 40%;
+    }
+    .fourthSec-mainText h1{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .header-content{
+        grid-template-areas: 
+            'hLogo hNav hNum'
+            'hTxt hTxt hTxt';
+    }
+    .header-mainText {
+        text-align: center;
+    }
+    .header-mainText h1{
+        font-size: 40px;
+    }
+
+    .secSec{
+        height: 1200px;
+    }
+    .secSec-mainText h1{
+        font-size: 3.5vmin;
+        margin-top: 60px;
+    }
+    .secSec-mainText p{
+        font-size: 2.4vmin;
+    }
+    .secSec-cards{
+        grid-template-columns: 1fr ;
+    }
+    .house{
+        justify-self: center;
+        width: 50vmin;
+        height: 52vmin;
+    }
+    .house h1{
+        font-size: 5vmin;
+    }
+    .house p{
+        font-size: 2vmin;
+    }
+
+
+    .thirdSec-mainText h1{
+        font-size: 3.3vmin;
+    }
+    .house-card{
+        width: 33vmin;
+        height: 70vmin;
+    }
+    .house-card img{
+        width: 33vmin; 
+    }
+    .thirdSec-button{
+        font-size: 2vmin;
+        padding: 3vmin 5vmin;
+    }
+    .card-text p{
+        font-size: 2.5vmin;
+    }
+    .card-text h4{
+        font-size: 2.5vmin;
+    }
+    .card-text h3{
+        font-size: 2.5vmin;
+    }
+
+
+    .fourthSec{
+        height: 1560px;
+    }
+    .fourthSec-mainText h1{
+        font-size: 3.8vmin;
+    }
+    .fourthSec-images{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+    }
+    .fourthSec-images div{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .fourthSec-images img{
+        float: none;
+    }
+
+
+
+    .fifthSec-mainText h1{
+        font-size: 5.5vmin;
+    }
+    .fifthSec-mainText h5{
+        font-size: 3.8vmin;
+    }
+    .fifthSec-content p{
+        font-size: 2.5vmin;
+        text-align: center;
+        margin-left: 0;
+    }
+    .form{
+        width: 100%;
+        overflow: hidden;
+    }
+    .form a{
+        padding: 2vmin 1vmin;
+        padding-left: 10vmin;
+        margin-left: -10vmin;
+        font-size: 3vmin;
+    }
+    .form input{
+        font-size: 3vmin;
+        width: 40vmin;
+    }
+
+
+    .footer-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr 0fr 2fr;
+    }
+    .footer-links{
+        margin-top: 20px;
+        margin-left: 2vmin;
+    }
+    .footer-links a{
+        font-size: 2vmin;
+    }
+    .footer p{
+        font-size: 2.2vmin;
+        margin-left: 5px;
+    }
+}
