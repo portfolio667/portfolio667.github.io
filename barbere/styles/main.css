@@ -5,6 +5,9 @@
     box-sizing: border-box;
     transition: .5s;
 }
+body{
+    overflow-x: hidden;
+}
 p, a, h2, h1, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
