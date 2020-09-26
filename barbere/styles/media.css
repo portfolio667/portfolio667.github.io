@@ -184,15 +184,23 @@
     .header-underTriangle{
         margin-top: -200px;
     }
+    .header-main{
+        width: 350px;
+        position: relative;
+    }
+    .header-underTriangle, .header-h1 {
+        width: 350px
+    }
 
     .header-years{
         grid-template-columns: 1fr;
+        width: 90%;
     }
     .header-year{
         margin-bottom: 50px;
     }
-    .secSec-triangle-wrapper{
-        margin-top: -250px;
+    .secSec-triangleTitle{
+        width: 350px;
     }
 
     .secSec-triangle-bottom{
@@ -200,14 +208,14 @@
         left: 14%;
     }
     .secSec-triangle-right{
-        left: 24.2%;
+        left: 26%;
         top: 61%;
         background: linear-gradient(to top right, #919191, #fff);
         width: 290px;
         height: 5px;
     }
     .secSec-triangle-left{
-        right: 34.3%;
+        right: 26.3%;
         top: 61%;
         background-color: #919191;
         width: 290px;
@@ -215,19 +223,19 @@
     }
     .secSec-triangleTitle h1{
         top: 60%;
-        margin-left: -30px;
+        margin-left: 0px;
     }
     .secSec-2000{
-        top: 10%;
-        margin-left: -20px;
+        top: 15%;
+        margin-left: -10px;
     }
     .secSec-2010{
         margin-left: 20px;
-        top: 60%;
+        top: 65%;
     }
     .secSec-2020{
         margin-right: 50px;
-        top: 60%;
+        top: 65%;
     }
 
     .fourthSec-title{
