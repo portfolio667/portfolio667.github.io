@@ -1,12 +1,67 @@
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .container{
-        width: 800px;
+        max-width: 800px;
     }
 }
 @media only screen and (max-width: 800px){
     .container{
-        width: 400px;
+        max-width: 700px;
     }
+    .burger{
+        display: inline-block;
+        z-index: 2;
+        margin-left: 20px;
+    }
+    .header-navigation{
+        width: 100vw;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    .nav-wrapper{
+        transition: 1s;
+        left: -100%;
+        display: grid;
+        width: 300px;
+        height: 100%;
+        position: relative;
+        top: -8%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: #A6A6A6;
+    }
+    .nav-wrapper a{
+        color: #fff;
+    }
+    .nav-wrapper._active{
+        left: 0; 
+    }
+    .header-nav{
+        margin-top: 10px;
+        grid-gap: 0;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .header-nav a{
+        margin-top: 30px;
+    }
+    .header-nav._right{
+        position: relative;
+        top: -40%;
+        left: 0;
+        right: 1;
+    }
+    .header-nav._first{
+        margin-top: 150px;
+        height: 200px;
+    }
+    .header-mainText{
+        position: absolute;
+        top: 30%;
+        justify-self: center;
+        z-index: 0;
+    }
+
+
     .fourthSec-form form input, .fourthSec-form form textarea, .fourthSec-button{
         width: 500px;
     }
@@ -34,7 +89,64 @@
         margin-left: 50px;
         padding-bottom: 100px;
     }
+    .thirdSec, .thirdSec-content{
+        height: 2200px;
+
+    }
     .thirdSec-services{
+        margin-top: -200px;
         grid-gap: 50px;
+        grid-template-columns: 1fr ;
+    }
+
+    .fourthSec-icons{
+        grid-gap: 25px;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container{
+        max-width: 500px;
+    }
+    .fSec-rightDates h1, .fSec-leftDates h1{
+        font-size: 42px;
+    }
+    .fSec-leftDates p, .fSec-rightDates p{
+        font-size: 18px;
+    }   
+    .secSec-team{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'justin'
+        'mark'
+        'ant';
+    }
+}
+@media only screen and (max-width: 500px){
+    .container{
+        max-width: 300px;
+    }
+    .fourthSec-content, .fourthSec{
+        height: 1400px;
+    }
+    .fourthSec-icons{
+        grid-template-columns: 1fr;
+    }
+    .fourthSec-icons img{
+        position: static;
+    }
+    .fourthSec-form{
+        justify-self: center;
+    }
+    .fourthSec-form form input, .fourthSec-form form textarea, .fourthSec-button{
+        width: 320px;
+        font-size: 12px;
+    }
+    .button-black{
+        padding: 20px 35px;
+    }
+    .right-content p{
+        font-size: 14px;
     }
 }

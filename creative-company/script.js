@@ -21,4 +21,21 @@ function progressing(){
         
     }
 }
+
+let burger = document.querySelector('.burger')
+let navWrapper = document.querySelector('.nav-wrapper')
+
+
+function burgerMenu(){
+    if(!navWrapper.classList.contains('_active')){
+        navWrapper.classList.add('_active')
+        burger.classList.add('_active')
+    }
+    else{
+        navWrapper.classList.remove('_active')
+        burger.classList.remove('_active')
+    } 
+}
+
+burger.addEventListener('click', burgerMenu)
 window.addEventListener('scroll', progressing)

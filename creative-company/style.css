@@ -9,6 +9,7 @@
     margin: 0;
     color: #1e1e1e;
     box-sizing: border-box;
+    transition: .5s;
 }
 p, a{
     font-family: 'Roboto', sans-serif;
@@ -53,24 +54,66 @@ h1{
     display: grid;
     justify-content: center;
 }
+
 .header-navigation{
+    position: relative;
     width: 630px;
     margin-top: 20px;
+    z-index: 2;
 }
-.header-navigation li{
+.burger{
+    width: 30px;
+    position: relative;
+    height: 30px;
+    top: 10%;
+    cursor: pointer;
+    display: none;
+}
+.burger span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: black;
+    top: 10%;
+    transition: .5s;
+}
+.burger._active span{
+    display: none;
+}
+.burger::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    bottom: 0;
+    transition: all .5s;
+}
+.burger._active::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+.burger._active::before{
+    transform: rotate(-45deg);
+}
+.burger::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    top: 0;
+    transition: all .5s;
+}
+.nav-wrapper{
     position: relative;
     list-style: none;
-}
-.header-navigation-left{
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: -20px;
 }
 .header-logo{
     position: absolute;
     left: 47%;
-    top: 0;
+    top: 3%;
     margin-top: -10px;
     background: black;
     width: 55px;
@@ -82,7 +125,7 @@ h1{
     color: white;
     padding-top: 5px;
 }
-.header-navigation-right{
+.header-nav._right{
     position: absolute;
     right: 0;
     top: 0;
@@ -98,6 +141,7 @@ h1{
 
 .header-mainText{
     text-align: center;
+    z-index: 1;
 }
 .header-mainText h1{
     font-size: 50px;
