@@ -1,33 +1,4 @@
-@media screen and (max-width: 768px){
-    .wrapper{
-        max-width: 750px;
-    }
-
-    .header-text{
-        grid-area: h-txt;
-        width: 40%;
-        text-align: center;
-        justify-self: center;
-    }
-
-
-    .about{
-        height: 1000px;
-    }
-    .about-content{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-                'a-img'
-                'a-txt';
-    }
-    .about-img img{
-        position: static;
-    }
-    .about-text{
-        grid-area: a-txt;
-        text-align: center;
-    }
-
+@media screen and (max-width: 1050px){
     .pets{
         height: 1000px;
     }
@@ -55,7 +26,7 @@
     .slider-content{
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .pets-slider{
         overflow-y: scroll;
@@ -63,6 +34,73 @@
         height: 550px;
         width: 100%;
     }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        max-width: 750px;
+    }
+    .burger{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        display: inline-block;
+        z-index: 3;
+        margin-right: 20px;
+    }
+    .header-nav nav{
+        z-index: 2;
+        position: absolute;
+        top: -30%;
+        right: -100%;
+        background-color: #2D2522;
+        height: 100vh;
+        overflow: ;
+    }
+    .header-nav nav._active{
+        right: 0;
+    }
+    .header-nav {
+        z-index: 2;
+    }
+    .header-nav li{
+        float: none;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .nav-wrap{
+        margin-top: 200px;
+    }
+
+    .header-text{
+        grid-area: h-txt;
+        width: 90%;
+        text-align: left;
+        justify-self: center;
+    }
+
+    .slider-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .about{
+        height: 1000px;
+    }
+    .about-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                'a-img'
+                'a-txt';
+    }
+    .about-img img{
+        position: static;
+    }
+    .about-text{
+        grid-area: a-txt;
+        text-align: center;
+    }
+
+
 
 
 
@@ -110,8 +148,22 @@
 
 @media screen and (max-width: 548px){
     .wrapper{
-        max-width: 500px;
+        max-width: 548px;
     }
+
+    .header, .header-content{
+        height: 700px;
+    }
+    .header-text{
+        text-align: left;
+        width: 90%;
+    }
+    .header-text h1{
+        font-size: 48px;
+    }
+
+
+
     .pets_arrows{
         margin-top: 170px;
         height: 200px;
@@ -124,5 +176,30 @@
     .pets-lm{
         margin-top: 100px;
         justify-self: center;
+    }
+
+    .help, .help-content{
+        height: 1000px;
+    }
+    .help-first-area, .help-sec-area{
+        grid-template-columns: 1fr 1fr;
+    }
+    .help-first-area div, .help-sec-area div{
+        margin-top: 20px;
+    }
+
+
+    .donation-img img{
+        width: 300px;
+    }
+    .donation-text{
+        margin-left: 50px;
+    }
+    .footer-img {
+        display: grid;
+    }
+    .footer-img img{
+        width: 200px;
+        align-self: flex-end;
     }
 }

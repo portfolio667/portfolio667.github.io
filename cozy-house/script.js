@@ -40,17 +40,45 @@ for (var i = 0; i < pet.length; i++) {
 document.querySelector('#butAbout').addEventListener('click', function()
 	{
 		scrollTo(event,'.about')
+		document.querySelector('body').style.overflowY = 'scroll'
+		nav.classList.remove('_active')
 	})
 document.querySelector('#butOur').addEventListener('click', function()
 	{
 		scrollTo(event,'.pets')
+		document.querySelector('body').style.overflowY = 'scroll'
+		nav.classList.remove('_active')
 	})
 document.querySelector('#butHelp').addEventListener('click', function()
 	{
 		scrollTo(event,'.help')
+		document.querySelector('body').style.overflowY = 'scroll'
+		nav.classList.remove('_active')
 	})
 document.querySelector('#butCont').addEventListener('click', function()
 	{
 		scrollTo(event,'.footer')
+		document.querySelector('body').style.overflowY = 'scroll'
+		nav.classList.remove('_active')
 	})
-// document.addEventListener('mousemove', parallax)
+
+
+let burger = document.querySelector('.burger')
+let nav = document.querySelector('.header-nav nav')
+
+function burgerFunc(){
+	if(!nav.classList.contains('_active')){
+		nav.classList.add('_active')
+		burger.classList.add('_active')
+		document.querySelector('.burger span').classList.add('_active')
+		document.querySelector('body').style.overflowY = 'hidden'
+	}
+	else{
+		nav.classList.remove('_active')
+		burger.classList.remove('_active')
+		document.querySelector('.burger span').classList.remove('_active')
+		document.querySelector('body').style.overflowY = 'scroll'
+	} 
+}
+
+burger.addEventListener('click', burgerFunc)
