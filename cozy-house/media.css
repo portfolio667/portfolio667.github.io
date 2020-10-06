@@ -70,7 +70,10 @@
     .nav-wrap{
         padding-top: 150px;
     }
-
+    .pets-lm .button{
+        padding: 10px 28px;
+        margin-left: 20px;
+    }
     .header-text{
         grid-area: h-txt;
         width: 90%;
@@ -84,7 +87,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .about{
-        height: 1000px;
+        height: 1200px;
     }
     .about-content{
         grid-template-columns: 1fr;
