@@ -51,7 +51,7 @@
     .header-nav nav{
         z-index: 2;
         position: absolute;
-        top: -25%;
+        top: -30%;
         right: -100%;
         background-color: #2D2522;
         height: 100vh;
