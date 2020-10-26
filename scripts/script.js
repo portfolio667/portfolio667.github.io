@@ -1,4 +1,4 @@
-let sliderItemWidth = Math.round(((window.innerWidth / 3) / 10) - 0.45) * 10;
+let sliderItemWidth = Math.round(((window.innerWidth) / 10) - 0.45) * 10;
 let sliderWidth
 let sliderItem = document.querySelectorAll('.slider-item')
 let sliderContent =  document.querySelector('.slider-content')
@@ -7,7 +7,7 @@ let downArr = document.querySelector('#down-arrow')
 let secondSec = document.querySelector('.secSec')
 let secondSecTxt = document.querySelector('.secSec-mainText')
 
-let switcher = document.querySelectorAll('.fourthsec-switch div')
+let switcher = document.querySelectorAll('.switchers div')
 
 let rightArr = document.querySelector('.rightArr')
 let leftArr = document.querySelector('.leftArr')
@@ -52,13 +52,33 @@ document.querySelectorAll('.nav a')[2].addEventListener('click', function(){
 function switching(num){
     switch (num) {
         case 0:
-            switcher[1].className = 'non-active'
+            for (let i = 0; i < switcher.length; i++) {
+                const el = switcher[i];
+                el.className = 'non-active'
+            }
             switcher[0].className = 'active'
             break;
         case sliderItemWidth:
+            for (let i = 0; i < switcher.length; i++) {
+                const el = switcher[i];
+                el.className = 'non-active'
+            }
             switcher[1].className = 'active'
-            switcher[0].className = 'non-active'
-            break;              
+            break;    
+        case sliderItemWidth*2:
+            for (let i = 0; i < switcher.length; i++) {
+                const el = switcher[i];
+                el.className = 'non-active'
+            }
+            switcher[2].className = 'active'
+            break; 
+        case sliderItemWidth*3:
+                for (let i = 0; i < switcher.length; i++) {
+                    const el = switcher[i];
+                    el.className = 'non-active'
+                }
+                switcher[3].className = 'active'
+            break;                      
         default:
             break;
     }
@@ -74,7 +94,7 @@ function setWidth(){
 
 function rightSlide(e){
     e.preventDefault()
-    if (right ==  (sliderItem.length - 3) * sliderItemWidth){
+    if (right ==  (sliderItem.length - 1) * sliderItemWidth){
         right = 0
     }
     else right += sliderItemWidth
@@ -84,7 +104,7 @@ function rightSlide(e){
 function leftSlide(e){
     e.preventDefault()
     if (right ==  0){
-        right = (sliderItem.length - 3) * sliderItemWidth
+        right = (sliderItem.length - 1) * sliderItemWidth
     }
     else right -= sliderItemWidth
     sliderContent.style.right = right + 'px'
@@ -129,6 +149,5 @@ burgerElem.addEventListener('click', burger)
 downArr.addEventListener('click', skills)
 clearInp()
 slide()
-if (document.documentElement.clientWidth > 767){
-    setWidth()
-}
+setWidth()
+
