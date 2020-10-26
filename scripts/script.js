@@ -145,6 +145,24 @@ function burger(){
 }
 
 
+// popup
+let popupButton = document.querySelector('.header-start')
+let popup = document.querySelector('.popup')
+let popupClose = document.querySelector('.popup__close')
+function popupFunc(){
+    if(!popup.classList.contains('_active')){
+        popup.classList.add('_active')
+    }
+}
+function popupCloseFunc(){
+    if(popup.classList.contains('_active')){
+        popup.classList.remove('_active')
+    }
+        
+}
+
+popupClose.addEventListener('click', popupCloseFunc)
+popupButton.addEventListener('click', popupFunc)
 burgerElem.addEventListener('click', burger)
 downArr.addEventListener('click', skills)
 clearInp()

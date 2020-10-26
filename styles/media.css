@@ -266,6 +266,11 @@
     .sliderItem-textWrapper{
         width: 400px;
     }
+
+    .popup__content{
+        height: 60%;
+        grid-template-columns: 1fr;
+    }
 }
 @media only screen and (max-width: 450px){
     .container{
